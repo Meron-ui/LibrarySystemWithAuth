@@ -1,0 +1,50 @@
+##server:
+##  port: 8080
+##spring:
+##  application:
+##    name: library-system
+##  datasource:
+##    url: jdbc:mysql://localhost:3306/librarydb?createDatabaseIfNotExist=true&autoReconnect=true&useSSL=false
+##    username: root
+##    password: root@123
+##    driverClassName: com.mysql.cj.jdbc.Driver
+##    hikari:
+##      maximumPoolSize: 10
+##  jpa:
+##    properties:
+##      hibernate:
+##        dialect: org.hibernate.dialect.MySQL8Dialect
+##    generate-ddl: true
+##    hibernate:
+##      naming:
+##        implicit-strategy: org.hibernate.boot.model.naming.ImplicitNamingStrategyLegacyJpaImpl
+##        physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
+##    show-sql: true
+#
+#
+#spring:
+#  datasource:
+##    url: jdbc:mysql://localhost:3306/mydatabase?useSSL=false&serverTimezone=UTC
+##    url: jdbc:mysql://localhost:3306/librarydatabase?createDatabaseIfNotExist=true&autoReconnect=true&useSSL=false
+#    url: jdbc:mysql://localhost:3306/librarydatabase?autoReconnect=true&useSSL=false&useUnicode=true
+#
+#    username: root
+#    password: root@123
+#  jpa:
+#    database-platform: org.hibernate.dialect.MySQLDialect
+#    hibernate:
+#      ddl-auto: update
+#    properties:
+#      hibernate:
+#        show_sql: true
+#        format_sql: true
+#
+#server:
+#  port: 8080
+#
+#logging:
+#  level:
+#    root: info
+#    org:
+#      hibernate:
+#        SQL: debug
